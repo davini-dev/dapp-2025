@@ -1,4 +1,5 @@
 // app/api/items/route.js
+// Davini
 
 const QUESTDB_URL = 'https://questdb-874733105499.us-central1.run.app/exec'; // URL da API SQL do QuestDB
 
