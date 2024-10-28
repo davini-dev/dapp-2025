@@ -24,10 +24,12 @@
     "npm": ">= 8"
   },
   "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.15.0",
     "@rainbow-me/rainbow-button": "^0.2.14",
     "@rainbow-me/rainbowkit": "^2.1.5",
     "@thirdweb-dev/react": "^4.9.4",
     "@thirdweb-dev/sdk": "^4.0.99",
+    "axios": "^1.7.7",
     "ethers": "^5.7.2",
     "flowbite": "^2.2.0",
     "flowbite-react": "^0.7.0",
