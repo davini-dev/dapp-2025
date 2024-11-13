@@ -5,8 +5,8 @@ import { twMerge } from "tailwind-merge";
 import "./globals.css";
 import { flowbiteTheme } from "./theme";
 
-import '@rainbow-me/rainbowkit/styles.css';
-import { Providers } from './providers';
+import "@rainbow-me/rainbowkit/styles.css";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,10 @@ const RootLayout: FC<PropsWithChildren> = function ({ children }) {
         <ThemeModeScript />
       </head>
       <body className={twMerge("bg-gray-50 dark:bg-gray-900", inter.className)}>
-        <Flowbite theme={{ theme: flowbiteTheme }}>      <Providers>{children}</Providers></Flowbite>
+        <Flowbite theme={{ theme: flowbiteTheme }}>
+          {" "}
+          <Providers>{children}</Providers>
+        </Flowbite>
       </body>
     </html>
   );

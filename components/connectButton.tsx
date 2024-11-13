@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { emojiAvatarForAddress } from "@/lib/emojiAvatarForAddress";
 import {
-  useConnectModal,
   useAccountModal,
   useChainModal,
+  useConnectModal,
 } from "@rainbow-me/rainbowkit";
+import { useEffect, useRef } from "react";
 import { useAccount, useDisconnect } from "wagmi";
-import { emojiAvatarForAddress } from "@/lib/emojiAvatarForAddress";
 
 export const ConnectBtn = () => {
   const { isConnecting, address, isConnected, chain } = useAccount();
   const { color: backgroundColor, emoji } = emojiAvatarForAddress(
-    address ?? ""
+    address ?? "",
   );
 
   const { openConnectModal } = useConnectModal();
@@ -39,7 +39,7 @@ export const ConnectBtn = () => {
         }}
         disabled={isConnecting}
       >
-        { isConnecting ? 'Connecting...' : 'Connect your wallet' }
+        {isConnecting ? "Connecting..." : "Connect your wallet"}
       </button>
     );
   }
@@ -53,15 +53,15 @@ export const ConnectBtn = () => {
   }
 
   return (
-    <div className="max-w-5xl w-full flex items-center justify-between">
+    <div className="flex w-full max-w-5xl items-center justify-between">
       <div
-        className="flex justify-center items-center px-4 py-2 border border-neutral-700 bg-neutral-800/30 rounded-xl font-mono font-bold gap-x-2 cursor-pointer"
+        className="flex cursor-pointer items-center justify-center gap-x-2 rounded-xl border border-neutral-700 bg-neutral-800/30 px-4 py-2 font-mono font-bold"
         onClick={async () => openAccountModal?.()}
       >
         <div
           role="button"
           tabIndex={1}
-          className="h-8 w-8 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden"
+          className="flex h-8 w-8 flex-shrink-0 items-center justify-center overflow-hidden rounded-full"
           style={{
             backgroundColor,
             boxShadow: "0px 2px 2px 0px rgba(81, 98, 255, 0.20)",

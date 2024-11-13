@@ -1,6 +1,6 @@
-import type { NextPage } from 'next';
-import { useAccount, useDisconnect } from 'wagmi';
-import { RainbowButton } from '@rainbow-me/rainbow-button';
+import { RainbowButton } from "@rainbow-me/rainbow-button";
+import type { NextPage } from "next";
+import { useAccount, useDisconnect } from "wagmi";
 
 const Home: NextPage = () => {
   const { isConnected } = useAccount();
@@ -9,11 +9,11 @@ const Home: NextPage = () => {
   return (
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
         gap: 10,
       }}
     >

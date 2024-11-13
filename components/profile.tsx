@@ -1,8 +1,8 @@
 "use client";
 
-import { useAccount, useBalance, useEnsName } from "wagmi";
 import { middleEllipsis } from "@/lib/utils";
 import { formatUnits } from "viem";
+import { useAccount, useBalance, useEnsName } from "wagmi";
 
 export default function Profile() {
   const { address, chain } = useAccount();
@@ -16,7 +16,7 @@ export default function Profile() {
   });
 
   return (
-    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+    <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
       <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
         <h2 className="mb-3 text-2xl font-semibold">Wallet address</h2>
         <p className="m-0 w-[30ch] text-sm opacity-50">
@@ -47,10 +47,10 @@ export default function Profile() {
 
       <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
         <h2 className={`mb-3 text-2xl font-semibold`}>EnsName</h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
+        <p className={`m-0 max-w-[30ch] text-balance text-sm opacity-50`}>
           {ens.data || ""}
         </p>
       </div>
     </div>
   );
-};
+}

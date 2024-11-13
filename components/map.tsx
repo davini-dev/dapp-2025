@@ -1,13 +1,12 @@
 "use client";
 
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { LatLngExpression, LatLngTuple } from "leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
-import "leaflet/dist/leaflet.css";
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
-import RoutingMachine from "@/components/RoutingMachine";
 import Envia from "@/components/teste";
+import "leaflet-defaulticon-compatibility";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet/dist/leaflet.css";
 
 interface MapProps {
   posix: LatLngExpression | LatLngTuple;
@@ -21,12 +20,8 @@ const defaults = {
 const Map = (Map: MapProps) => {
   const { zoom = defaults.zoom, posix } = Map;
 
-
-
   return (
     <MapContainer
-
-    
       center={posix}
       zoom={zoom}
       scrollWheelZoom={false}
@@ -39,7 +34,7 @@ const Map = (Map: MapProps) => {
       <Marker position={posix} draggable={false}>
         <Popup>Hey ! I study here</Popup>
       </Marker>
-      <Envia currentPos={[28.3949, 84.1240]} />
+      <Envia currentPos={[28.3949, 84.124]} />
     </MapContainer>
   );
 };

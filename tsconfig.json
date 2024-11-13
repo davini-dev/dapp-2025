@@ -31,6 +31,9 @@
     "**/*.cjs",
     "**/*.mjs",
     "**/*.ts",
-    "**/*.tsx"
-, "app/api/hello.ts", "components/MapboxExample/index.js", "app/clientes/page.jsx"  ]
+    "**/*.tsx",
+    "app/api/hello.ts",
+    "components/MapboxExample/index.js",
+    "app/clientes/page.jsx"
+  ]
 }

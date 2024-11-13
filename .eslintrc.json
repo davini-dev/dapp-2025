@@ -1,5 +1,4 @@
 {
-  
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/strict",
@@ -9,7 +8,8 @@
     "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:@next/next/recommended",
-    "next", "prettier"
+    "next",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

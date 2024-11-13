@@ -1,5 +1,5 @@
 import { useSidebarContext } from "@/context/SidebarContext";
-import { Button, Sidebar } from "flowbite-react";
+import { Sidebar } from "flowbite-react";
 import type { FC } from "react";
 import { BiBuoy } from "react-icons/bi";
 import {
@@ -47,8 +47,6 @@ export const DashboardSidebar: FC = function () {
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
-
- 
     </Sidebar>
   );
 };
