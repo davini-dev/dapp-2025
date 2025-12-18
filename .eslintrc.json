@@ -8,8 +8,7 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:@next/next/recommended",
-    "next", "prettier"
+    "plugin:@next/next/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

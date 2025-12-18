@@ -4,15 +4,14 @@ import { SidebarProvider, useSidebarContext } from "@/context/SidebarContext";
 import type { FC, PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 import { DashboardNavbar } from "./navbar";
+import { Providers } from "./providers";
 import { DashboardSidebar } from "./sidebar";
-import { Providers } from './providers';
-
 
 const LiveLayout: FC<PropsWithChildren> = function ({ children }) {
   return (
     <SidebarProvider>
       <DashboardLayoutContent>
-      <Providers>{children}</Providers>
+        <Providers>{children}</Providers>
       </DashboardLayoutContent>
     </SidebarProvider>
   );

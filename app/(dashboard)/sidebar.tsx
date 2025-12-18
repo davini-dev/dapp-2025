@@ -1,13 +1,8 @@
 import { useSidebarContext } from "@/context/SidebarContext";
-import { Button, Sidebar } from "flowbite-react";
+import { Sidebar } from "flowbite-react";
 import type { FC } from "react";
 import { BiBuoy } from "react-icons/bi";
-import {
-  HiChartPie,
-  HiShoppingBag,
-  HiUser,
-  HiViewBoards,
-} from "react-icons/hi";
+import { HiChartPie, HiShoppingBag, HiViewBoards } from "react-icons/hi";
 import { twMerge } from "tailwind-merge";
 
 export const DashboardSidebar: FC = function () {
@@ -28,9 +23,6 @@ export const DashboardSidebar: FC = function () {
           <Sidebar.Item href="#" icon={HiChartPie}>
             Dashboard
           </Sidebar.Item>
-          <Sidebar.Item href="/rastrear/#" icon={HiUser}>
-            Rastrear
-          </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiShoppingBag}>
             Produtos
           </Sidebar.Item>
@@ -47,8 +39,6 @@ export const DashboardSidebar: FC = function () {
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
-
- 
     </Sidebar>
   );
 };
