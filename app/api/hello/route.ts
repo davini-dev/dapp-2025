@@ -1,9 +1,3 @@
-import type { NextApiRequest } from "next";
-
-type ResponseData = {
-  message: string;
-};
-
-export function GET(req: NextApiRequest) {
+export function GET() {
   return Response.json({ message: "Hello from Next.js!" });
 }

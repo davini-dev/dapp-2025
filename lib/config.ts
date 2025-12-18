@@ -12,7 +12,7 @@ const supportedChains: Chain[] = [sepolia, bscTestnet, blastSepolia];
 export const config = getDefaultConfig({
   appName: "WalletConnection",
   projectId,
-  chains: supportedChains as any,
+  chains: [sepolia, bscTestnet, blastSepolia],
   ssr: true,
   storage: createStorage({
     storage: cookieStorage,

@@ -14,8 +14,6 @@ import Image from "next/image";
 import type { FC } from "react";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 
-const isConnected = true;
-
 const Ratingv: FC = function () {
   return (
     <div className="flex items-center">

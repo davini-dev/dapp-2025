@@ -51,7 +51,7 @@ const FooterPage: FC = function () {
       </p>
       <div className="flex items-center justify-center space-x-1">
         <a
-          href="#"
+          href="/"
           data-tooltip-target="tooltip-facebook"
           className="inline-flex cursor-pointer justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
@@ -79,7 +79,7 @@ const FooterPage: FC = function () {
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
         <a
-          href="#"
+          href="/"
           data-tooltip-target="tooltip-twitter"
           className="inline-flex cursor-pointer justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
@@ -106,7 +106,7 @@ const FooterPage: FC = function () {
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
         <a
-          href="#"
+          href="/"
           data-tooltip-target="tooltip-github"
           className="inline-flex cursor-pointer justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
@@ -134,7 +134,7 @@ const FooterPage: FC = function () {
           <div className="tooltip-arrow" data-popper-arrow></div>
         </div>
         <a
-          href="#"
+          href="/"
           data-tooltip-target="tooltip-dribbble"
           className="inline-flex cursor-pointer justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
