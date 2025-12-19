@@ -1,4 +1,3 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import type { NextPage } from "next";
 //import { ConnectBtn } from '@/components/connectButton';
 
@@ -25,7 +24,6 @@ export const HomePageContent: NextPage = function () {
               padding: 12,
             }}
           >
-            <ConnectButton />
           </div>
           <FooterPage />
         </section>
